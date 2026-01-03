@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.container {
+  width: 700px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1.5fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Common box styling */
+.box {
+  border: 4px solid #178181;
+}
+
+/* Colors */
+.green {
+  background: #69dd57;
+}
+
+.red {
+  background: #c23a3a;
+}
+
+.yellow {
+  background: #ec9f2b;
+}
+
+/* Positioning */
+.tall {
+  grid-row: 1 / 4;
+}
+
+.wide {
+  grid-column: 2 / 4;
+}
+
+.tall-right {
+  grid-row: 2 / 4;
+}
